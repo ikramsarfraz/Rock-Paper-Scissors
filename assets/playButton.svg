@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="300.843" height="301.843" viewBox="0 0 300.843 301.843">
+  <defs>
+    <filter id="Rectangle_1" x="0" y="0" width="300.843" height="301.843" filterUnits="userSpaceOnUse">
+      <feOffset dy="10" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="playButton" transform="translate(-804.579 -783.579)">
+    <g transform="matrix(1, 0, 0, 1, 804.58, 783.58)" filter="url(#Rectangle_1)">
+      <rect id="Rectangle_1-2" data-name="Rectangle 1" width="200" height="200" rx="50" transform="translate(150.42) rotate(45)" fill="#fff"/>
+    </g>
+    <text id="PLAY" transform="translate(860.138 956)" fill="#ffbe7b" font-size="80" font-family="Lato-Semibold, Lato" font-weight="600"><tspan x="0" y="0">PLAY</tspan></text>
+  </g>
+</svg>

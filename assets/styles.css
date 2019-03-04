@@ -1,0 +1,183 @@
+body {
+  height: 100vh;
+  background-color: #333;
+}
+
+#landingPageContainer {
+  position: absolute;
+  font-weight: 900;
+  font-size: 88px;
+  color: #fff;
+  top: 0%;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 2;
+  background-image: linear-gradient(to bottom right, #fd8912, #ffbe7b);
+  transition: transform 0.8s;
+  -webkit-transition: transform 0.8s;
+}
+
+#playBtn {
+  width: 200px;
+  color: #333;
+  transition: transform 0.8s;
+  -webkit-transition: transform 0.8s;
+}
+
+#playBtn:hover {
+  cursor: pointer;
+  transform: rotate(360deg);
+  transition: transform 1.5s ease-in-out;
+}
+
+#playBtn:hover g g rect {
+  fill: #333;
+}
+
+.playContainer {
+  margin: 5px 0;
+  transition: transform 0.6s;
+  -webkit-transition: transform 0.6s;
+  visibility: hidden;
+  opacity: 0;
+}
+
+#playerContainer .row .col svg:hover {
+  cursor: pointer;
+}
+
+.rock {
+  width: 150px;
+}
+
+.paper {
+  width: 150px;
+}
+
+.scissors {
+  width: 150px;
+}
+
+.hidePlayContainer {
+  visibility: hidden;
+  opacity: 0;
+}
+
+.showPlayContainer {
+  visibility: visible;
+  opacity: 1;
+}
+#playerContainer .playContainer .col svg {
+  transition: transform 0.6s;
+  -webkit-transition: transform 0.6s;
+}
+
+#playerContainer .playContainer .col svg:hover {
+  transform: rotate(360deg);
+  transition: transform 0.6s ease-in-out;
+  -webkit-transition: transform 0.6s ease-in-out;
+}
+
+#playerContainer .playContainer .col svg:hover g g path {
+  fill: #fd8912;
+}
+
+#playerContainer .currentPlay .col svg g g path {
+  fill: #fd8912;
+}
+
+.playerName {
+  font-family: "Lato", sans-serif;
+  font-weight: 900;
+  font-size: 60px;
+  color: #fd8912;
+}
+
+#playerOneName {
+  -ms-transform: rotate(-90deg); /* IE 9 */
+  -webkit-transform: rotate(-90deg); /* Safari 3-8 */
+  transform: rotate(-90deg);
+}
+
+#opponentName {
+  -ms-transform: rotate(90deg); /* IE 9 */
+  -webkit-transform: rotate(90deg); /* Safari 3-8 */
+  transform: rotate(90deg);
+}
+
+#messageContainer {
+  position: absolute;
+  z-index: -1;
+  top: 10%;
+  opacity: 0;
+  font-family: "Lato", sans-serif;
+  font-weight: 900;
+  font-size: 100px;
+  color: #fd8912;
+}
+
+#btnContainer {
+  position: absolute;
+  bottom: 8%;
+  opacity: 0;
+  z-index: -1;
+}
+
+#resetBtn {
+  width: 150px;
+  cursor: pointer;
+  transition: transform 0.8s;
+  -webkit-transition: transform 0.8s;
+}
+
+#resetBtn:hover {
+  transform: rotate(360deg);
+  transition: transform 0.8s ease-in-out;
+  -webkit-transition: transform 0.8s ease-in-out;
+}
+
+#resetBtn:hover g path {
+  fill: #fd8912;
+}
+
+.showResults {
+  transition: visibility 0s 0.8s, opacity 0.8s ease-in-out;
+  -webkit-transition: visibility 0s 0.8s, opacity 0.8s ease-in-out;
+}
+
+#closeButtonContainer {
+  position: absolute;
+  top: 2%;
+  right: 1%;
+  width: 60px;
+}
+
+#closeBtn {
+  transition: transform 0.8s;
+  -webkit-transition: transform 0.8s;
+}
+
+#closeBtn:hover g {
+  fill: #bc3939;
+  cursor: pointer;
+}
+
+#closeBtn:hover {
+  transform: rotate(360deg);
+  transition: transform 0.8s ease-in-out;
+  -webkit-transition: transform 0.8s ease-in-out;
+}
+
+#playerScoreContainer {
+  font-family: "Lato", sans-serif;
+  font-weight: 900;
+  font-size: 100px;
+  color: #fd8912;
+}
+#opponentScoreContainer {
+  font-family: "Lato", sans-serif;
+  font-weight: 900;
+  font-size: 100px;
+  color: #fd8912;
+}
